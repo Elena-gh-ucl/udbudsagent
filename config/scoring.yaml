@@ -1,0 +1,15 @@
+# Vægte og grænser for bid/no-bid-anbefalingen. Ændres af ledelsen, ikke af AI.
+
+weights:
+  fit: 0.35            # hvor godt opgaven passer til ydelser og CPV
+  requirements: 0.35   # andel af minimumskrav der er opfyldt
+  value: 0.15          # kontraktværdi inden for virksomhedens interval
+  time: 0.15           # tid nok til at skrive et godt tilbud
+
+thresholds:
+  screening_min: 0.25  # under dette sorteres udbuddet fra i første filter
+  bid: 0.70            # over dette: anbefal BYD
+  consider: 0.45       # mellem consider og bid: OVERVEJ, under: BYD IKKE
+
+min_days_to_prepare: 10
+# Et ikke-opfyldt knock-out-krav giver altid BYD IKKE, uanset score.

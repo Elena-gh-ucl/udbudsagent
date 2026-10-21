@@ -1,0 +1,48 @@
+# Virksomhedsprofil — det agenterne sammenligner opgaver med.
+# Fiktiv eksempelvirksomhed: NordScene ApS, eventteknik i Odense.
+
+company:
+  name: "NordScene ApS (fiktiv)"
+  industry: "Eventteknik: lyd, lys, scene, LED og teknisk produktion"
+  employees: 24
+  annual_revenue_dkk: 31000000
+  equity_ratio_pct: 28
+  countries: ["DNK", "DEU", "SWE"]     # markeder der overvåges i TED
+  languages: ["dansk", "engelsk", "tysk"]   # sprog virksomheden kan levere på
+  base_city: "Odense"
+  max_travel_km: 600
+
+services:
+  - "lyd, lys og scene til koncerter og festivaler"
+  - "teknisk produktion af konferencer og messer"
+  - "LED-skærme og streaming"
+  - "byfester og kulturarrangementer"
+
+# CPV-koder (7995xxxx = event, festival, messe, konference)
+cpv_codes: ["79950000", "79951000", "79952000", "79952100", "79953000", "79956000"]
+
+keywords: ["event", "festival", "koncert", "konference", "scene", "lyd", "lys", "byfest",
+           "veranstaltung", "bühne", "tontechnik", "lichttechnik", "stadtfest",
+           "evenemang", "scen", "ljud", "ljus", "konsert"]
+
+exclude_keywords: ["rengøring", "reinigung", "städning", "catering", "byggeri", "bauleistung", "møbler"]
+
+certificates: ["ISO 9001"]          # ISO 45001 mangler bevidst
+security_clearance: false
+
+references:
+  - {client: "dansk kommune", topic: "byfest lyd lys scene", value_dkk: 650000, year: 2025}
+  - {client: "musikfestival på Fyn", topic: "festival scene lyd lys LED", value_dkk: 1400000, year: 2025}
+  - {client: "universitet", topic: "konference streaming lyd", value_dkk: 380000, year: 2024}
+  - {client: "kulturhus", topic: "koncert lys lyd", value_dkk: 220000, year: 2024}
+  - {client: "tysk kommune i Schleswig-Holstein", topic: "stadtfest veranstaltungstechnik", value_dkk: 410000, year: 2025}
+
+contract_value_dkk:
+  min: 100000
+  max: 3000000
+
+capacity:
+  max_parallel_bids: 3
+  bid_hours_estimate: 30              # gennemsnitlige timer pr. tilbud
+  hourly_cost_dkk: 520                # intern timepris inkl. overhead (antagelse)
+  expected_margin_pct: 25
