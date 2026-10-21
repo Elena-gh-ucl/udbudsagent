@@ -1,0 +1,4 @@
+__pycache__/
+.streamlit/secrets.toml
+data/decisions.csv
+data/usage_log.csv
